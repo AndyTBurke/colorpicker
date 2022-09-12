@@ -62,11 +62,11 @@ function App() {
         {modeChoices}
       </select>
       <button onClick={() => newColorways()}>GET COLORWAY</button>
-      <div className="color-row color-selection" style={{backgroundColor: state.pickedColor}}></div>
-      <div className="color-row color-pick-1" style={{backgroundColor: state.recColor1}}></div>
-      <div className="color-row color-pick-2" style={{backgroundColor: state.recColor2}}></div>
-      <div className="color-row color-pick-3" style={{backgroundColor: state.recColor3}}></div>
-      <div className="color-row color-pick-4" style={{backgroundColor: state.recColor4}}></div>
+      <div className="color-row color-selection" style={{backgroundColor: state.pickedColor}}><h3>{state.pickedColor}</h3></div>
+      <div className="color-row color-pick-1" style={{backgroundColor: state.recColor1}}><h3>{state.recColor1}</h3></div>
+      <div className="color-row color-pick-2" style={{backgroundColor: state.recColor2}}><h3>{state.recColor2}</h3></div>
+      <div className="color-row color-pick-3" style={{backgroundColor: state.recColor3}}><h3>{state.recColor3}</h3></div>
+      <div className="color-row color-pick-4" style={{backgroundColor: state.recColor4}}><h3>{state.recColor4}</h3></div>
     </div>
   )
 }

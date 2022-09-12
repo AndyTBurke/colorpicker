@@ -1,12 +1,13 @@
 html, body, .app {
     height: 100%;
     width: 100%;
+    background-color: aliceblue;
 }
 
 .App {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr;
     margin: 10%;
 }
 
@@ -15,24 +16,51 @@ html, body, .app {
 }
 
 h1 {
+    color: rgb(252, 247, 247);
     grid-column-start: 1;
     grid-column-end: 5;
-    border: 1px solid black;
+    border: 1px inset black;
     text-align: center;
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,171,16,1) 19%,
+     rgba(240,255,0,1) 33%, rgba(0,255,38,1) 60%, rgba(198,71,214,1) 81%);
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.95);
+    text-shadow: 2px 2px #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }
 
 .color-picker {
     grid-column-start: 1;
     grid-column-end: 2;
+    width: 100%;
+    height: 100%;
 }
 
 .type-picker {
     grid-column-start: 2;
-    grid-column-end: 4;    
+    grid-column-end: 4;
+    font-size: x-large;
+    text-align: center;    
 }
 
 .color-row {
     grid-column-start: 1;
     grid-column-end: 5;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-row > h3 {
+    background-color: white;
+    padding: .5vh;
+    border: 2px inset black;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
 }
