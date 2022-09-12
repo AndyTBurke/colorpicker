@@ -1,0 +1,38 @@
+html, body, .app {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 10%;
+}
+
+.color-selection {
+    border: 1px solid black;
+}
+
+h1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.color-picker {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.type-picker {
+    grid-column-start: 2;
+    grid-column-end: 4;    
+}
+
+.color-row {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid black;
+}
