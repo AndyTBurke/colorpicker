@@ -1,4 +1,4 @@
-html, body, .app {
+html {
     height: 100%;
     width: 100%;
     background-color: aliceblue;
@@ -23,8 +23,8 @@ h1 {
     text-align: center;
     background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,171,16,1) 19%,
      rgba(240,255,0,1) 33%, rgba(0,255,38,1) 60%, rgba(198,71,214,1) 81%);
-    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.95);
-    text-shadow: 3px 3px #bbbbbb;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.95);
+    text-shadow: 0px 0px 20px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
@@ -41,7 +41,8 @@ h1 {
     grid-column-start: 2;
     grid-column-end: 4;
     font-size: x-large;
-    text-align: center;  
+    text-align: center;
+    cursor: pointer;  
 }
 
 .color-row {
@@ -54,7 +55,7 @@ h1 {
 }
 
 .color-row > h3 {
-    background-color: white;
+    background-color: aliceblue;
     padding: .5vh;
     border: 2px inset black;
     border-radius: 10px;
@@ -64,4 +65,34 @@ h1 {
 
 button {
     cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
+    background: lavender;
+}
+
+button:hover {
+    background: radial-gradient(circle, rgba(195,193,230,1) 28%, rgba(255,179,179,1) 51%, rgba(127,215,152,1) 100%, rgba(184,203,238,1) 100%);
+}
+
+button:active {
+    border-style: inset;
+    border-color: rgb(255, 247, 222);
+    color: aliceblue;
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3vh;
+        margin-top: auto;
+    }
+
+    .color-row > h3 {
+        font-size: 3vh;
+        width: 35%;
+    }
+
+    .type-picker {
+        font-size: larger;
+    }
 }

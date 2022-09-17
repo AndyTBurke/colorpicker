@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const defaultState = {
-    pickedColor: "#334433",
-    mode: "monochrome",
+    pickedColor: "#15c615",
+    mode: "analogic",
     recColor1: "red",
     recColor2: "green",
     recColor3: "blue",
